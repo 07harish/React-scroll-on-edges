@@ -64,7 +64,7 @@ const edgeScroll = useScrollOnEdges({
     </div>
   )
 ```
-More info on [prop getters]((https://kentcdodds.com/blog/how-to-give-rendering-control-to-users-with-prop-getters))
+More info on [prop getters](https://kentcdodds.com/blog/how-to-give-rendering-control-to-users-with-prop-getters)
 
 ## Demo
 [Basic demo](https://codesandbox.io/s/react-scroll-on-edges-phhfb?file=/src/App.js) - Move the mouse near edges to scroll the container
