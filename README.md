@@ -13,14 +13,19 @@ npm install --save react-scroll-on-edges
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'react-scroll-on-edges'
-import 'react-scroll-on-edges/dist/index.css'
+import useScrollOnEdges from 'react-scroll-on-edges'
 
 class Example extends Component {
+
+  const getEdgeScrollingProps = useScrollOnEdges()
+
   render() {
-    return <MyComponent />
+    // Container div
+    return <div {...getEdgeScrollingProps()} >
+              Content...
+          </div>
   }
 }
 ```
