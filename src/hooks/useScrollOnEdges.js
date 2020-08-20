@@ -2,7 +2,7 @@ import React from 'react'
 
 const useScrollOnEdges = (props = undefined) => {
   const { canAnimate = true, edgeSize = 25, scrollSpeed = 12 } = props || {}
-  const timer = React.useRef()
+  const frameID = React.useRef()
 
   function handleMousemove (event) {
     if (!canAnimate) {
@@ -44,25 +44,25 @@ const useScrollOnEdges = (props = undefined) => {
     // Animate scrolling when shouldScroll returns true
     function animateScrolling (time) {
       if (shouldScroll()) {
-        timer.current = undefined
+        frameID.current = undefined
         startAnimation()
       } else {
         stopAnimmation()
       }
     }
 
-    // Sets Animation ID (timer.curent) and Initiate scrolling
+    // Sets Animation ID (frameID.curent) and Initiate scrolling
     function startAnimation () {
-      if (!timer.current) {
-        timer.current = window.requestAnimationFrame(animateScrolling)
+      if (!frameID.current) {
+        frameID.current = window.requestAnimationFrame(animateScrolling)
       }
     }
 
     // cancels scrolling of Animation ID
     function stopAnimmation () {
-      if (timer.current) {
-        window.cancelAnimationFrame(timer.current)
-        timer.current = undefined
+      if (frameID.current) {
+        window.cancelAnimationFrame(frameID.current)
+        frameID.current = undefined
       }
     }
 
