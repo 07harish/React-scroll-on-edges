@@ -22,17 +22,20 @@ import React from 'react'
 
 import useScrollOnEdges from 'react-scroll-on-edges'
 
-class Example extends Component {
+function Example() {
 
   const getEdgeScrollingProps = useScrollOnEdges()
 
-  render() {
+  
     // Container div
     return <div {...getEdgeScrollingProps()} >
               Content...
           </div>
-  }
+  
 }
+
+export default Example
+
 ```
 
 ## Props and usage with props
@@ -68,6 +71,7 @@ const edgeScroll = useScrollOnEdges({
       content...
     </div>
   )
+
 ```
 More info on [prop getters](https://kentcdodds.com/blog/how-to-give-rendering-control-to-users-with-prop-getters)
 
