@@ -78,7 +78,7 @@ More info on [prop getters](https://kentcdodds.com/blog/how-to-give-rendering-co
 ## Demo
 [Basic demo](https://codesandbox.io/s/react-scroll-on-edges-phhfb?file=/src/App.js) - Move the mouse near edges to scroll the container
 
-[Using with React-table](https://codesandbox.io/s/react-scroll-on-edges-79f8o?fontsize=14&hidenavigation=1&theme=dark) - Start selecting the cells and move near edges to scroll the container and select more cells
+[More realistic example using React-table](https://codesandbox.io/s/react-scroll-on-edges-79f8o?fontsize=14&hidenavigation=1&theme=dark) - Start selecting the cells and move near edges to scroll the container and select more cells
 
 ## License
 
