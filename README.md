@@ -1,6 +1,7 @@
 # react-scroll-on-edges
 
 ### Ability to Scroll when the mouse is near the edges
+![useScrollOnEdges](https://user-images.githubusercontent.com/27046938/90964498-c956c100-e4de-11ea-970b-d2c73590ef61.gif)
 
 
   useScrollOnEdges is a react custom hook which uses `scrollTo` for scrolling X and Y. `requestAnimationFrame` to animate the scrolling.
@@ -37,7 +38,6 @@ function Example() {
 export default Example
 
 ```
-
 ## (Optional) Props and usage with props
  `useScrollOnEdges` hook can be called with the parameter as an object with three **optional** props
 
