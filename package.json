@@ -6,6 +6,13 @@
   "license": "MIT",
   "repository": "07harish/react-scroll-on-edges",
   "main": "dist/index.js",
+  "keywords": [
+    "react-hooks",
+    "edge-scrolling",
+    "react-scroll-on-edges",
+    "react",
+    "scroll-mouse-near-edges"
+  ],
   "module": "dist/index.modern.js",
   "source": "src/index.js",
   "engines": {
