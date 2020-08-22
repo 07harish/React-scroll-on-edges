@@ -1,6 +1,6 @@
 {
   "name": "react-scroll-on-edges",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Scroll the container when the mouse is on the edges",
   "author": "07harish",
   "license": "MIT",
